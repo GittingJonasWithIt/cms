@@ -1,0 +1,29 @@
+section {
+  margin-top: 80px;
+  color: $myblue;
+
+  h2  {
+    margin-left: 2%;
+  }
+  ul{
+    list-style: none;
+    display: inline-flex;
+
+    li{
+      margin: 0px 60px 20px 60px;
+      align-self: center;
+      background-color: gainsboro;
+      padding: 50px;
+      opacity: 0.6;
+      &:first-of-type{
+        margin-left: 0;
+      }
+      h3{
+
+        text-align: center;
+      }
+    }
+
+  }
+
+}

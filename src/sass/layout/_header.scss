@@ -1,0 +1,41 @@
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0.5em 1em;
+
+  h1{
+    font-size: 3em;
+    color: $myblue;
+  }
+
+
+   nav {
+    justify-content: flex-end;
+    display: flex;
+    padding-top: 1.1em;
+    ul {
+     padding: 0;
+     list-style: none;
+      display: flex;
+    }
+
+    li {
+      padding-right: 0.5em;
+      &:last-of-type{
+        padding: 0;
+      }
+      a{
+        font-size: 1.2em;
+        text-decoration: none;
+        color: #444;
+        &:hover{
+          color: $myblue;
+          border-bottom: 2px $myblue solid;
+        }
+      }
+    }
+
+  }
+}
