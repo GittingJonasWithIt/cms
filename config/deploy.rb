@@ -9,7 +9,7 @@ set :branch, 'master'
 set :user, 'cms'
 
 # shared dirs and files will be symlinked into the app-folder by the 'deploy:link_shared_paths' step.
-set :shared_dirs, fetch(:shared_dirs, []).push('wp-content/uploads', 'wp-content/gallery')
+set :shared_dirs, fetch(:shared_dirs, []).push('wp-content/uploads')
 set :shared_files, fetch(:shared_files, []).push('wp-config.php')
 
 # Put any custom commands you need to run at setup

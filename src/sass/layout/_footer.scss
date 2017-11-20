@@ -1,5 +1,9 @@
 footer{
-  width: auto;
-  height: 400px;
-  background-color: $myblue;
+    margin-top: 30%;   
+    margin-bottom: 30%;
+    div{
+        background: $myblue;
+        background-size: cover;
+        height: 11em;
+    }
 }
