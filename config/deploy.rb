@@ -2,7 +2,7 @@ require 'mina/deploy'
 require 'mina/git'
 
 set :application_name, 'cms'
-set :domain, '46.101.146.201'
+set :domain, '139.59.214.110'
 set :deploy_to, '/var/www/html'
 set :repository, 'https://github.com/designrubenz/cms.git'
 set :branch, 'master'
