@@ -10,7 +10,7 @@ header{
     align-items: baseline;
     
     nav {
-        padding-top: 1em;
+        //padding-top: 1em;
         ul{
             display: flex;
         }
@@ -29,7 +29,7 @@ header{
                 }
             }
           .icon{
-                display: none;
+                visibility: hidden;
           }
         }
       
@@ -41,22 +41,30 @@ header{
     display: none !important;
   }
   .nav a.icon {
-    display: block !important;
+    visibility: visible;
+    font-size: 2em;
+    color: $myblue;
   }
   .icon:hover{
     border: none;
-  }
-  .nav.responsive {
-    position: relative !important;
   }
   .nav.responsive a.icon {
     position: absolute !important;
     right: 0 !important;
     top: 0 !important;
   }
+  
+  .nav.responsive {
+    position: absolute!important;
+    right: 8px;
+    top: 10px;
+    background-color: white;
+    opacity: 0.95;
+    padding: 5%;
+  }
+  
   .nav.responsive a {
-    display: block !important;
-    text-align: left !important;
+    display: inline!important;
   }
   .nav.responsive ul{
     flex-direction: column !important;

@@ -1,4 +1,4 @@
-.titleLeistungen{
+.titleLeistungen, .titleNews, .titleReferences{
     font-size: 1.8em;
     color: $myblue;
     margin-top: 8%;
@@ -30,14 +30,14 @@
             }
         }
     }
-    .design{
+    .col1{
         margin-right: 2%;
     }
-    .strategie{
+    .col2{
         margin-right: 2%;
         margin-left: 2%;
     }
-    .consulting{
+    .col3{
         margin-left: 2%;
     }
 }
@@ -45,43 +45,120 @@
 #news{
     margin-left: 2%;
     margin-right: 2%;
-    h1{
-        font-size: 1.8em;
-        color: $myblue;
-        margin-top: 8%;
-        margin-bottom: 4%;
+    color: $myblue;
+    display: flex;
+    h2{
+        font-weight: bold;
+        padding-bottom: 1em;
+        text-align: center;
     }
     p{
-        background-color: whitesmoke; 
         border-radius: 5px;
+    }
+    div{
+      width: 30.667%;
+      background-color: whitesmoke;
+      padding: 2%;
+    }
+    .col1{
+        margin-right: 2%;
+    }
+  .col2{
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    .col3{
+        margin-left: 2%;
     }
 }
 
+
+
 #referenzen{
-    font-size: 1.8em;
-    color: $myblue;
-    margin-top: 8%;
     margin-left: 2%;
-    margin-bottom: 4%;
+    margin-right: 2%;
+    color: $myblue;
+    display: flex;
+    h2{
+        font-weight: bold;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+    p{
+        border-radius: 5px;
+    }
+    div{
+      width: 30.667%;
+      background-color: whitesmoke;
+      padding: 2%;
+        text-align: center;
+    }
+    .col1{
+        margin-right: 2%;
+    }
+    .col2{
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    .col3{
+        margin-left: 2%;
+    }
+    img{
+        border-radius: 100%;
+        padding: 8%;
+        width: 80%;
+    }
 }
 
+
 @media screen and (max-width: 768px){
-  #leistungen{
+  #leistungen, #news, #referenzen{
     flex-direction: column;
   }
-  .design{
+  .col1{
     margin-left: 2%;
     margin-bottom: 4%;
   }
-  .consulting{
+  .col3{
     margin-right: 2%;
     margin-top: 4%;
   }
-  .titleLeistungen{
+  .titleLeistungen, .titleNews, .titleReferences{
     margin-left: 4%;
   }
   #news, #referenzen{
     margin-left: 4%;
     margin-right: 4%;
   }
+  #news .col1{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #news .col2{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #news .col3{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #referenzen .col1{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #referenzen .col2{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #referenzen .col3{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+    
 }

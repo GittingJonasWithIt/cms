@@ -1,9 +1,13 @@
 footer{
-    margin-top: 30%;   
-    margin-bottom: 30%;
+    margin-top: 10%;   
     div{
         background: $myblue;
         background-size: cover;
-        height: 11em;
+        height: 4em;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
