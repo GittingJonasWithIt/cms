@@ -1,0 +1,43 @@
+.title_about{
+  font-size: 1.8em;
+  color: $myblue;
+  margin-top: 8%;
+  margin-left: 2%;
+  margin-bottom: 4%;
+}
+
+.alex__sumner--img img{
+  border-radius: 100%; 
+}
+
+.alex__sumner--img{
+  display: flex;
+  justify-content: center;
+  padding: 1.5em;
+}
+
+.alex__sumner--text{
+  padding: 1.5em;
+  text-align: center;
+}
+
+.alex__sumner--text p{
+  padding-bottom: 1.5em;
+}
+
+.about{
+  background-color: whitesmoke;
+  margin: 2%;
+}
+
+@media screen and (max-width: 768px){
+  .about{
+     margin: 4%;
+  }
+  .title_about{
+    margin-left: 4%;
+  }
+  .alex__sumner--text{
+    padding: 0.3em;
+  }
+}
